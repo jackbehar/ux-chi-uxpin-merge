@@ -2,6 +2,10 @@ import * as PropTypes from 'prop-types';
 import React from 'react';
 import ReactWrapper from '../../UXPinWrapper/react-wrapper';
 
+/**
+ * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/alert/
+ * @uxpindescription Alert messages provide contextual feedback for user actions.
+ */
 export default function UxpAlert(props) {
   const WrappedAlert = ReactWrapper('chi-alert');
 
@@ -45,4 +49,5 @@ UxpAlert.propTypes = {
 
   /** custom event when trying to dismiss an alert. */
   dismissAlert: PropTypes.func,
+
 };
