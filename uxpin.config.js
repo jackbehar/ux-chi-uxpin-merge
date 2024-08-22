@@ -8,11 +8,16 @@ module.exports = {
           'src/components/_uxPin/ExpansionPanel/ExpansionPanel.jsx',
           'src/components/_uxPin/Alert/Alert.jsx',
           'src/components/_uxPin/Button/Button.jsx',
+          'src/components/_uxPin/Card/Card.jsx',
+          'src/components/_uxPin/Accordion/Accordion.jsx',
+          'src/components/_uxPin/AccordionItem/AccordionItem.jsx',
         ],
       },
       {
         name: 'Buttons',
         include: [
+          'src/components/Card/Card.js',
+
           'src/components/Primary-button/Primary-button.js',
           'src/components/Secondary-button/Secondary-button.js',
           'src/components/Tertiary-button/Tertiary-button.js',
