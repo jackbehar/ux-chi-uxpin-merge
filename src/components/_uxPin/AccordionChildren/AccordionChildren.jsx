@@ -21,20 +21,18 @@ function AccordionChildren(props) {
       className={`
       chi-accordion
       ${props.card ? '-card' : ''}
+      ${props.truncated ? '-truncated' : ''}
+      ${props.size ? props.size : ''}
       `}
-      id="example-base"
     >
       {props.children.map((item, key) => {
-        {
-          console.log(item);
-        }
         return (
           <AccordionItem
             key={key}
             title={item.props.title}
             content={item.props.content}
             disabled={item.props.disabled}
-            isOpen={openIndex === key}
+            isOpen={item.props.isOpen}
             onClick={() => handleItemClick(key)}
           />
         );
@@ -46,6 +44,8 @@ function AccordionChildren(props) {
 AccordionChildren.propTypes = {
   children: PropTypes.node,
   card: PropTypes.bool,
+  truncated: PropTypes.bool,
+  size: PropTypes.oneOf(['-sm', '-md']),
 };
 
 export default AccordionChildren;
