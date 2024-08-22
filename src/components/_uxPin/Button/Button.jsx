@@ -3,7 +3,6 @@ import React from 'react';
 import ReactWrapper from '../../UXPinWrapper/react-wrapper';
 import { CHEVRON_RIGHT, UTILITY_CLASSES } from '../../../constants/classes';
 
-
 /**
  * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/button/
  * @uxpindescription Buttons are used to trigger actions in forms, modals, and more.
@@ -11,11 +10,12 @@ import { CHEVRON_RIGHT, UTILITY_CLASSES } from '../../../constants/classes';
 export default function UxpButton(props) {
   const WrappedButton = ReactWrapper('chi-button');
 
-  return <WrappedButton {...props}/>;
+  return <WrappedButton data-tooltip="Button action" {...props} />;
 }
 
 UxpButton.propTypes = {
-  /** Children components inside the Button */
+  /** Children components inside the Button
+   */
   children: PropTypes.node,
 
   /** Alternative text in case of icon buttons */
@@ -53,8 +53,4 @@ UxpButton.propTypes = {
 
   /** Custom event when the mouse pointer is moved out of the button */
   onChiMouseLeave: PropTypes.func,
-};
-
-UxpButton.defaultProps = {
-  children: 'Button Text',
 };
