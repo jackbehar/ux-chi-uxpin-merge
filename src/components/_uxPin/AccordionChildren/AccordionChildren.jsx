@@ -6,7 +6,7 @@ import AccordionItem from '../AccordionItem/AccordionItem';
 
 /**
  * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/accordion/
- * @uxpindescription Alert messages provide contextual feedback for user actions.
+ * @uxpindescription Accordion is used to toggle between hiding and showing content.
  */
 
 function AccordionChildren(props) {
@@ -26,7 +26,7 @@ function AccordionChildren(props) {
     >
       {props.children.map((item, key) => {
         {
-          console.log(item.props.children);
+          console.log(item);
         }
         return (
           <AccordionItem

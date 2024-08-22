@@ -33,16 +33,14 @@ export default function UxpCard(props) {
 }
 
 UxpCard.propTypes = {
-
   title: PropTypes.node,
-    /** The content of the card
+  /** The content of the card
    * @uxpinpropname  content
-  */
-    children: PropTypes.node,
+   */
+  children: PropTypes.node,
   active: PropTypes.bool,
   empty: PropTypes.bool,
   highlight: PropTypes.bool,
 };
 
-UxpCard.defaultProps = {
-};
+UxpCard.defaultProps = {};

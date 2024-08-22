@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 /**
- * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/alert/
- * @uxpindescription Alert messages provide contextual feedback for user actions.
+ * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/accordion/
+ * @uxpindescription Accordion is used to toggle between hiding and showing content.
  */
-
-// Accordion Item Component
-function AccordionItem({ title, content, isOpen, onClick, children }) {
+function AccordionItem({ title, content, isOpen, onClick }) {
   return (
     <div className={`chi-accordion__item ${isOpen ? '-expanded' : ''}`}>
-      <button className="chi-accordion__trigger" onClick={onClick}>
+      <button className="chi-accordion__trigger" onClick={onClick} type="button">
         <i className="chi-icon icon-chevron-down" aria-hidden="true"></i>
         <div className="chi-accordion__title">{title}</div>
       </button>
@@ -31,7 +29,7 @@ AccordionItem.propTypes = {
    */
   isOpen: PropTypes.bool,
   onClick: PropTypes.func,
-  key: PropTypes.string,
+  // key: PropTypes.string,
 };
 
 export default AccordionItem;

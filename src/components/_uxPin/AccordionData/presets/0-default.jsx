@@ -8,8 +8,4 @@ const accordionData = [
   { title: 'Accordion 4', content: 'Content goes here' },
 ];
 
-export default (
-  <AccordionData data={accordionData} uxpId="alert">
-    This is a success alert
-  </AccordionData>
-);
+export default <AccordionData data={accordionData} uxpId="accordion-data-1" />;
