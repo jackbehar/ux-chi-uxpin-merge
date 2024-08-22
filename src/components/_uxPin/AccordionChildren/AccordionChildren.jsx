@@ -33,6 +33,7 @@ function AccordionChildren(props) {
             key={key}
             title={item.props.title}
             content={item.props.content}
+            disabled={item.props.disabled}
             isOpen={openIndex === key}
             onClick={() => handleItemClick(key)}
           />
