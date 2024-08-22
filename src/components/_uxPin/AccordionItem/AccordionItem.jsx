@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
  */
 
 // Accordion Item Component
-function AccordionItem({ title, content, isOpen, onClick, key }) {
+function AccordionItem({ title, content, isOpen, onClick, children }) {
   return (
     <div className={`chi-accordion__item ${isOpen ? '-expanded' : ''}`}>
       <button className="chi-accordion__trigger" onClick={onClick}>
@@ -23,11 +23,15 @@ function AccordionItem({ title, content, isOpen, onClick, key }) {
 }
 
 AccordionItem.propTypes = {
-  title: PropTypes.string,
-  content: PropTypes.string,
+  title: PropTypes.node,
+  content: PropTypes.node,
+  /**
+   * If `true`, the switch is checked.
+   * @uxpinbind onClick 0
+   */
   isOpen: PropTypes.bool,
   onClick: PropTypes.func,
-  key: PropTypes.string
+  key: PropTypes.string,
 };
 
 export default AccordionItem;

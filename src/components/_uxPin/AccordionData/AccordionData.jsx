@@ -1,26 +1,27 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import AccordionItem from '../AccordionItem/AccordionItem';
 /**
  * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/alert/
  * @uxpindescription Alert messages provide contextual feedback for user actions.
  */
 
 // Accordion Item Component
-function AccordionItem({ title, content, isOpen, onClick }) {
-  return (
-    <div className={`chi-accordion__item ${isOpen ? '-expanded' : ''}`}>
-      <button className="chi-accordion__trigger" onClick={onClick}>
-        <i className="chi-icon icon-chevron-down" aria-hidden="true"></i>
-        <div className="chi-accordion__title">{title}</div>
-      </button>
-      {isOpen && (
-        <div className="chi-accordion__content">
-          <p className="chi-accordion__text">{content}</p>
-        </div>
-      )}
-    </div>
-  );
-}
+// function AccordionItem({ title, content, isOpen, onClick }) {
+//   return (
+//     <div className={`chi-accordion__item ${isOpen ? '-expanded' : ''}`}>
+//       <button className="chi-accordion__trigger" onClick={onClick}>
+//         <i className="chi-icon icon-chevron-down" aria-hidden="true"></i>
+//         <div className="chi-accordion__title">{title}</div>
+//       </button>
+//       {isOpen && (
+//         <div className="chi-accordion__content">
+//           <p className="chi-accordion__text">{content}</p>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
 
 AccordionItem.propTypes = {
   title: PropTypes.string,
@@ -30,7 +31,7 @@ AccordionItem.propTypes = {
 };
 
 // Accordion Wrapper Component
-function Accordion(props) {
+function AccordionData(props) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleItemClick = (index) => {
@@ -38,8 +39,7 @@ function Accordion(props) {
   };
 
   return (
-    <div className="chi-accordion" id="example-base">
-      {props.children}
+    <div>
       {props.data.map((item, index) => (
         <AccordionItem
           key={index}
@@ -53,8 +53,8 @@ function Accordion(props) {
   );
 }
 
-Accordion.propTypes = {
-  children: PropTypes.node,
+AccordionData.propTypes = {
+  // children: PropTypes.node,
   data: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -63,4 +63,4 @@ Accordion.propTypes = {
   ),
 };
 
-export default Accordion;
+export default AccordionData;
