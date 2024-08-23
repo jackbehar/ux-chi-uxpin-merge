@@ -1,12 +1,24 @@
-// import React from 'react';
-// import Alert from '../Alert';
+import React from 'react';
+import ExpansionPanel from '../ExpansionPanel';
+import UxpButton from '../../Button/Button';
 
-// export default (
-//   <Alert
-//     uxpId="alert"
-//     size="md"
-//     state="info"
-//     type="bubble"
-//     active
-//   />
-// );
+export default (
+  <ExpansionPanel
+    epanelTitle="Active State"
+    activeContent="Content in expansion panel (Active)"
+    doneContent="Content in expansion panel (Done)"
+    state="active"
+    title="Expansion Panel"
+    changeContent={
+      <UxpButton color="primary" variant="flat" uxpId="button-1">
+        Edit
+      </UxpButton>
+    }
+    footerContent={
+      <UxpButton color="primary" uxpId="button-2">
+        Continue
+      </UxpButton>
+    }
+    uxpId="alert"
+  />
+);
