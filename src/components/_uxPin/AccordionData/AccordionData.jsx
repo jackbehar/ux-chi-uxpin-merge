@@ -14,7 +14,15 @@ function AccordionData(props) {
   };
 
   return (
-    <div>
+    <div
+      className={`
+      chi-accordion
+      ${props.card ? '-card' : ''}
+      ${props.truncated ? '-truncated' : ''}
+      ${props.size ? props.size : ''}
+      `}
+    >
+      {' '}
       {props.data.map((item, index) => (
         <AccordionItem
           key={index}
@@ -36,6 +44,9 @@ AccordionData.propTypes = {
       content: PropTypes.string,
     })
   ),
+  card: PropTypes.bool,
+  truncated: PropTypes.bool,
+  size: PropTypes.oneOf(['-sm', '-md']),
 };
 
 export default AccordionData;
