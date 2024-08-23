@@ -5,6 +5,7 @@ module.exports = {
       {
         name: 'UXPIN ADDED',
         include: [
+          'src/components/_uxPin/ExpansionPanelGroup/ExpansionPanelGroup.jsx',
           'src/components/_uxPin/ExpansionPanel/ExpansionPanel.jsx',
           'src/components/_uxPin/Alert/Alert.jsx',
           'src/components/_uxPin/Button/Button.jsx',

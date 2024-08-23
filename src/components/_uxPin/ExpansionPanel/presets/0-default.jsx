@@ -4,7 +4,6 @@ import UxpButton from '../../Button/Button';
 
 export default (
   <ExpansionPanel
-    epanelTitle="Active State"
     activeContent="Content in expansion panel (Active)"
     doneContent="Content in expansion panel (Done)"
     state="active"
@@ -19,6 +18,6 @@ export default (
         Continue
       </UxpButton>
     }
-    uxpId="alert"
+    uxpId="expansion-panel-1"
   />
 );
