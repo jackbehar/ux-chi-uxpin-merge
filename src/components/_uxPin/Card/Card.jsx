@@ -1,14 +1,11 @@
 import * as PropTypes from 'prop-types';
 import React from 'react';
-import ReactWrapper from '../../UXPinWrapper/react-wrapper';
 
 /**
  * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/card/
  * @uxpindescription Cards are flexible containers used for displaying content.
  */
 export default function UxpCard(props) {
-  const WrappedCard = ReactWrapper('chi-card');
-
   return (
     <div
       className={`
