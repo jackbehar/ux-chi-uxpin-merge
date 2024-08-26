@@ -5,7 +5,7 @@ import React from 'react';
  * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/card/
  * @uxpindescription Cards are flexible containers used for displaying content.
  */
-export default function UxpCard(props) {
+export default function Card(props) {
   return (
     <div
       className={`
@@ -29,7 +29,7 @@ export default function UxpCard(props) {
   );
 }
 
-UxpCard.propTypes = {
+Card.propTypes = {
   title: PropTypes.node,
   /** The content of the card
    * @uxpinpropname  content
@@ -40,4 +40,4 @@ UxpCard.propTypes = {
   highlight: PropTypes.bool,
 };
 
-UxpCard.defaultProps = {};
+Card.defaultProps = {};
