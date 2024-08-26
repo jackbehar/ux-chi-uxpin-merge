@@ -14,6 +14,7 @@ module.exports = {
           'src/components/_uxPin/AccordionChildren/AccordionChildren.jsx',
           'src/components/_uxPin/AccordionItem/AccordionItem.jsx',
           'src/components/_uxPin/Header/Header.jsx',
+          'src/components/_uxPin/Carousel/Carousel.jsx',
         ],
       },
       {
@@ -117,4 +118,5 @@ module.exports = {
     ],
   },
   name: 'Chi',
+  settings: { useUXPinProps: true },
 };
