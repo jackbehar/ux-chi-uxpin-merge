@@ -16,6 +16,7 @@ module.exports = {
           'src/components/_uxPin/Header/Header.jsx',
           'src/components/_uxPin/Carousel/Carousel.jsx',
           'src/components/_uxPin/ButtonGroup/ButtonGroup.jsx',
+          'src/components/_uxPin/Modal/Modal.jsx',
         ],
       },
       {
