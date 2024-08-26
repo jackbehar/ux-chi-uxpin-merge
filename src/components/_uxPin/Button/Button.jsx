@@ -7,13 +7,13 @@ import { CHEVRON_RIGHT, UTILITY_CLASSES } from '../../../constants/classes';
  * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/button/
  * @uxpindescription Buttons are used to trigger actions in forms, modals, and more.
  */
-export default function UxpButton(props) {
+export default function Button(props) {
   const WrappedButton = ReactWrapper('chi-button');
 
   return <WrappedButton data-tooltip="Button action" {...props} />;
 }
 
-UxpButton.propTypes = {
+Button.propTypes = {
   /** Children components inside the Button
    */
   children: PropTypes.node,

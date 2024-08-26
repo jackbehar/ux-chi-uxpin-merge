@@ -13,6 +13,7 @@ module.exports = {
           'src/components/_uxPin/AccordionData/AccordionData.jsx',
           'src/components/_uxPin/AccordionChildren/AccordionChildren.jsx',
           'src/components/_uxPin/AccordionItem/AccordionItem.jsx',
+          'src/components/_uxPin/Header/Header.jsx',
         ],
       },
       {
