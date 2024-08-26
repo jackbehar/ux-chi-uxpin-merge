@@ -1,7 +1,6 @@
 import * as PropTypes from 'prop-types';
 import React from 'react';
 import ReactWrapper from '../../UXPinWrapper/react-wrapper';
-import { CHEVRON_RIGHT, UTILITY_CLASSES } from '../../../constants/classes';
 
 /**
  * @uxpindocurl https://lib.lumen.com/chi/6.3.0/components/button/
@@ -10,7 +9,7 @@ import { CHEVRON_RIGHT, UTILITY_CLASSES } from '../../../constants/classes';
 export default function Button(props) {
   const WrappedButton = ReactWrapper('chi-button');
 
-  return <WrappedButton data-tooltip="Button action" {...props} />;
+  return <WrappedButton {...props} />;
 }
 
 Button.propTypes = {

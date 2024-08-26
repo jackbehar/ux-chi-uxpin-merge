@@ -12,7 +12,6 @@ export default function Header(props) {
       chi-header
       ${props.size ? props.size : ''}
       ${props.impersonation ? '-impersonation' : ''}
-
       `}
     >
       {props.impersonation ? (
