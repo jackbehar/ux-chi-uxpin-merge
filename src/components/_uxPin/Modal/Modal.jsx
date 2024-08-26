@@ -43,9 +43,6 @@ function Modal(props) {
 }
 
 Modal.propTypes = {
-  /*
-   * @uxpinbind onClose 0
-   */
   open: PropTypes.bool,
   title: PropTypes.string,
   children: PropTypes.node,
